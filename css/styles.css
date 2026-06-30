@@ -1,6 +1,6 @@
 /* General */
 body {
-    background-color: #bdc3d6;
+    background-color: #1a2a48;
     font-family: Calibri, sans-serif;
     margin: 0;
     padding: 0;
@@ -10,7 +10,8 @@ body {
 
 /* Header */
 header {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85); /* antes: #fff */
+  backdrop-filter: blur(8px); /* efecto cristal */
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 
@@ -151,7 +152,7 @@ h1 {
     box-shadow: 0 0 20px #06b6d4;
 }
 
-/* Galería TalleresGR adaptativa */
+/* Galería TalleresGR adaptativa
 #talleres .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -159,9 +160,9 @@ h1 {
     gap: 15px;
     justify-items: center;
     margin-top: 15px;
-}
+} */
 
-/* Logos y banners grandes (fila superior) */
+/* Logos y banners grandes (fila superior)
 #talleres .gallery img:nth-child(-n+4) {
     width: 150px;
     height: auto;
@@ -177,7 +178,7 @@ h1 {
 #talleres .gallery img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px #06b6d4;
-}
+} */
 
 /* PDF incrustados */
 iframe {
@@ -195,6 +196,17 @@ iframe {
 iframe:hover {
     transform: scale(1.01);
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Mapa de contacto — sin hover de scale */
+.contact-map iframe {
+    height: 300px;
+    box-shadow: none;
+    transition: none;
+}
+.contact-map iframe:hover {
+    transform: none;
+    box-shadow: none;
 }
 
 /* Tarjeta de contacto */
@@ -266,7 +278,7 @@ a:hover {
     .gallery img { max-width: 100%; width: 150px; }
     iframe { height: 400px; }
     
-    /* TalleresGR: todas las imágenes en columna */
+    /* TalleresGR: todas las imágenes en columna
     #talleres .gallery {
         grid-template-columns: 1fr;
     }
@@ -275,7 +287,7 @@ a:hover {
     #talleres .gallery img:nth-child(n+5) {
         width: 80%;
         max-width: 200px;
-    }
+    } */
 }
 /* Lightbox */
 #lightbox {
@@ -336,4 +348,12 @@ a:hover {
 
 .game-cover:hover {
     transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+#bg-canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
 }

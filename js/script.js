@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     this.size = Math.random() * 1.5 + 0.3;
     this.speedX = (Math.random() - 0.5) * 0.4;
     this.speedY = (Math.random() - 0.5) * 0.4;
-    this.alpha = Math.random() * 0.5 + 0.1;
+    this.alpha = Math.random() * 0.7 + 0.3;
     // azul o cian
     this.color = Math.random() > 0.5 ? '59,130,246' : '6,182,212';
   }
