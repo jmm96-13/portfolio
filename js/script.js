@@ -185,8 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 300);
   }
 
-  document.querySelectorAll('.gallery img, .preview-img').forEach(img => {
-    img.addEventListener('click', () => openLightbox(img.src, img.alt));
+document.querySelectorAll('.gallery img, .preview-img, .contact-img').forEach(img => {    img.addEventListener('click', () => openLightbox(img.src, img.alt));
     img.setAttribute('tabindex', '0');
     img.addEventListener('keydown', e => {
       if (e.key === 'Enter' || e.key === ' ') openLightbox(img.src, img.alt);
