@@ -93,10 +93,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── 2. TYPING EFFECT ──────────────────────────
   const phrases = [
-    'Junior Web Developer',
-    'Diseñadora Gráfica',
+    'Software Developer ',
+    'Front-End Developer',
     'Game Designer',
-    'Modeladora 3D',
     'Apasionada del código'
   ];
   const typedEl = document.getElementById('typed');
