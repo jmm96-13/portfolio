@@ -4,54 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Josefa Macias Manceras</title>
+  <!-- Google Fonts para un look más moderno -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+  <!-- Fondo de partículas -->
+  <canvas id="bg-canvas"></canvas>
+
   <!-- HEADER -->
-  <header>
-    <h1>Portfolio Josefa Macias Manceras</h1>
+  <header id="header">
+    <h1>Josefa Macias</h1>
     <img src="documentos/foto_perfil.png" alt="Foto de Josefa" class="profile-img">
     <nav class="nav-bar">
-      <a href="#cv">Curriculum</a>
+      <a href="#cv">CV</a>
       <a href="#talleres">TalleresGR</a>
       <a href="#realestate">Real Estate</a>
       <a href="#darkmiau">Darkmiau</a>
-      <a href="#proyectos">Proyectos Web</a>
-      <a href="#modelado">Modelado 3D</a>
+      <a href="#proyectos">Web</a>
+      <a href="#modelado">3D</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO con efecto Typing -->
   <section class="hero">
     <h2>Hola, soy Josefa 👋</h2>
-    <p>Junior Developer | Málaga, España</p>
+    <p><span id="typed"></span></p>
+    <p class="location">Málaga, España</p>
   </section>
 
-  <!-- CONTENEDOR PRINCIPAL -->
   <main class="container">
 
-  <!-- CURRICULUM -->
-  <section id="cv" class="project fade-in">
-  <h2>
-    <a href="documentos/CV-Josefa_Macias_Manceras_TecnicoSuperior.pdf" 
-       target="_blank" rel="noopener noreferrer">
-      Ver Curriculum (PDF)
-    </a>
-  </h2>
-  </section>
+    <!-- CURRICULUM -->
+    <section id="cv" class="project fade-in">
+      <div class="cv-box">
+        <h2>Curriculum Vitae</h2>
+        <a href="documentos/CV-Josefa_Macias_Manceras_TecnicoSuperior.pdf" 
+           target="_blank" rel="noopener noreferrer" class="btn-download">
+          Descargar PDF
+        </a>
+      </div>
+    </section>
 
-    <!-- TALLERESGR -->
+    <!-- TALLERESGR (Mantiene tus tamaños) -->
     <section id="talleres" class="project fade-in">
-  <h2>Web Talleres Gomez & Rueda</h2>
-  
-  <div class="project-header">
-    <p><a href="https://saldyard.github.io/talleresGR/" target="_blank">Visitar la web</a></p>
-    <img src="TalleresGR/web_talleres.JPG" 
-         alt="Portada Web Talleres Gomez & Rueda" 
-         class="preview-img">
-  </div>
+      <h2>Web Talleres Gomez & Rueda</h2>
+      <div class="project-header">
+        <p><a href="https://saldyard.github.io/talleresGR/" target="_blank">Visitar la web</a></p>
+        <img src="TalleresGR/web_talleres.JPG" alt="Portada Web Talleres" class="preview-img">
+      </div>
       <h3>Diseño gráfico</h3>
       <div class="gallery">
         <img src="TalleresGR/logo_1.png" alt="Logo 1">
@@ -68,71 +71,41 @@
     <section id="realestate" class="project fade-in">
       <h2>Web Real Estate</h2>
       <div class="project-header">
-      <p>
-      <a href="https://saldyard.github.io/realEstate/" target="_blank">
-        Visitar la web
-      </a>
-      </p>
-      <img src="realEstate/web_inmobiliaria.JPG" 
-         alt="Portada Web Real Estate" 
-         class="preview-img">
+        <p><a href="https://saldyard.github.io/realEstate/" target="_blank">Visitar la web</a></p>
+        <img src="realEstate/web_inmobiliaria.JPG" alt="Portada Web Real Estate" class="preview-img">
       </div>
       <h3>Web Beta Imágenes</h3>
       <div class="gallery">
         <img src="realEstate/borrador1.JPG" alt="Borrador 1">
         <img src="realEstate/borrador2.JPG" alt="Borrador 2">
       </div>
-      <h3>
-      <a href="realEstate/readme.pdf" target="_blank" rel="noopener noreferrer">
-      Ver Readme (PDF)
-      </a>
-      </h3>
-      </section>
+      <p><a href="realEstate/readme.pdf" target="_blank">Ver Readme (PDF)</a></p>
+    </section>
 
     <!-- DARKMIAU -->
     <section id="darkmiau" class="project fade-in">
       <h2>Videogame Darkmiau</h2>
-      <img src="Darkmiau/caratula.png" alt="Carátula Darkmiau" style="width:250px; display:block; margin:0 auto; border-radius:15px;">
-      <h3>Puedes jugarlo aquí: <a href="https://saldyard.itch.io/dark-miau" target="_blank">Darkmiau</a></h3>
-      <p>
-      <a href="Darkmiau/GDD_DARK_MIAU.pdf" target="_blank" rel="noopener noreferrer">
-        Ver Game Design Document (PDF)
-      </a>
-    </p>
-  </section>
+      <img src="Darkmiau/caratula.png" alt="Carátula Darkmiau" class="game-cover">
+      <h3>Juega aquí: <a href="https://saldyard.itch.io/dark-miau" target="_blank">Itch.io</a></h3>
+      <p><a href="Darkmiau/GDD_DARK_MIAU.pdf" target="_blank">Game Design Document</a></p>
+    </section>
 
-    <!-- PROYECTOS WEB -->
-<section id="proyectos" class="project fade-in">
-  <h2>Proyectos Web</h2>
-  <ul>
-    <li><a href="Proyectos_web/ejercicio1.html" target="_blank">Ejercicio 1</a></li>
-    <li><a href="Proyectos_web/ejercicio2.html" target="_blank">Ejercicio 2</a></li>
-    <li><a href="Proyectos_web/TechSolutions S.L/index.html" target="_blank">TechSolutions S.L.</a></li>
-    <li>
-    <a href="Proyectos_web/Wordle_Game/Wordle_code.pdf" 
-      target="_blank" rel="noopener noreferrer">
-      Wordle Game: Ver PDF
-    </a>
-    </li>
-      <li>Imágenes:</li>
-   </ul>
-
-      <!-- Galería de Wordle -->
+    <!-- PROYECTOS WEB (Corregido estructura) -->
+    <section id="proyectos" class="project fade-in">
+      <h2>Proyectos Web</h2>
+      <ul class="web-list">
+        <li><a href="Proyectos_web/ejercicio1.html" target="_blank">Ejercicio 1</a></li>
+        <li><a href="Proyectos_web/ejercicio2.html" target="_blank">Ejercicio 2</a></li>
+        <li><a href="Proyectos_web/TechSolutions S.L/index.html" target="_blank">TechSolutions S.L.</a></li>
+        <li><a href="Proyectos_web/Wordle_Game/Wordle_code.pdf" target="_blank">Wordle Game (Código PDF)</a></li>
+      </ul>
+      <h3>Capturas Wordle:</h3>
       <div class="gallery">
         <img src="Proyectos_web/Wordle_Game/inicia_el_juego_main.PNG" alt="Inicia el juego">
-        <img src="Proyectos_web/Wordle_Game/ERROR_palabra6letras_WordkeFeedback.PNG" alt="Error palabra 6 letras">
-        <img src="Proyectos_web/Wordle_Game/_WordleFeedback_2.PNG" alt="Wordle Feedback 2">
-        <img src="Proyectos_web/Wordle_Game/wordlefilemanager_4intentos.PNG" alt="Wordle File Manager 4 intentos">
-        <img src="Proyectos_web/Wordle_Game/wordlefilemanager2_3intentos.PNG" alt="Wordle File Manager 3 intentos">
-        <img src="Proyectos_web/Wordle_Game/wordlegame_2intentos.PNG" alt="Wordle Game 2 intentos">
-        <img src="Proyectos_web/Wordle_Game/wordlegame2_1intento.PNG" alt="Wordle Game 1 intento">
-        <img src="Proyectos_web/Wordle_Game/wordlegame3_0intentos.PNG" alt="Wordle Game 0 intentos">
-        <img src="Proyectos_web/Wordle_Game/wordlegame4_adivinaste.PNG" alt="Wordle Game adivinaste">
-        <img src="Proyectos_web/Wordle_Game/carpetawordlegame_archivos_historial_words.PNG" alt="Historial Words">
+        <img src="Proyectos_web/Wordle_Game/_WordleFeedback_2.PNG" alt="Feedback">
+        <img src="Proyectos_web/Wordle_Game/wordlegame4_adivinaste.PNG" alt="Adivinaste">
       </div>
-    </li>
-  </ul>
-</section>
+    </section>
 
     <!-- MODELADO 3D -->
     <section id="modelado" class="project fade-in">
@@ -140,89 +113,34 @@
       <div class="gallery">
         <img src="Modelado_3d/deer.jpg" alt="Deer">
         <img src="Modelado_3d/ears.jpg" alt="Ears">
-        <img src="Modelado_3d/eyes.jpg" alt="Eyes">
         <img src="Modelado_3d/hand.jpg" alt="Hand">
         <img src="Modelado_3d/horns.jpg" alt="Horns">
-        <img src="Modelado_3d/noise.jpg" alt="Noise">
-        <img src="Modelado_3d/toy.jpg" alt="Toy">
       </div>
     </section>
 
     <!-- CONTACTO -->
-<section id="contacto" class="project fade-in contact-card">
-  <h2>Contacto</h2>
-  <img src="documentos/Tarjeta_Josefa_Macias.png" alt="Tarjeta de contacto" class="contact-img">
-  <ul>
-    <li>LinkedIn: <a href="https://www.linkedin.com/in/josefa-macias/" target="_blank">Perfil</a></li>
-    <li>GitHub: <a href="https://github.com/saldyard" target="_blank">Perfil</a></li>
-    <li>Ubicación: Málaga, España</li>
-  </ul>
+    <section id="contacto" class="project fade-in contact-card">
+      <h2>Contacto</h2>
+      <img src="documentos/Tarjeta_Josefa_Macias.png" alt="Tarjeta contacto" class="contact-img">
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/josefa-macias/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/saldyard" target="_blank">GitHub</a>
+        <p>Málaga, España</p>
+      </div>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4229.846658668433!2d-4.549763490566948!3d36.73782337214924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1282549a8f3%3A0x86d10d4a28bf24e5!2sParque%20Tecnol%C3%B3gico%20de%20Andaluc%C3%ADa%20S.A.!5e1!3m2!1ses!2ses!4v1756846275247!5m2!1ses!2ses" 
+        width="100%" height="300" style="border:0; border-radius:15px; margin-top:20px;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 
-  <!-- Google Maps Embed -->
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4229.846658668433!2d-4.549763490566948!3d36.73782337214924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1282549a8f3%3A0x86d10d4a28bf24e5!2sParque%20Tecnol%C3%B3gico%20de%20Andaluc%C3%ADa%20S.A.!5e1!3m2!1ses!2ses!4v1756846275247!5m2!1ses!2ses" 
-    width="100%" 
-    height="400" 
-    style="border:0; border-radius:15px; margin-top:20px;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</section>
+  </main>
 
-</main>
+  <button id="backToTop">↑</button>
 
-<button id="backToTop">↑</button>
-<!-- Lightbox para ampliar imágenes -->
-<div id="lightbox">
-  <img src="" alt="Imagen ampliada">
-</div>
+  <div id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img src="" alt="Ampliada">
+  </div>
 
-<!-- JS -->
-<script src="script.js"></script>
-<script>
-  // Fade-in al hacer scroll
-  const faders = document.querySelectorAll('.fade-in');
-  const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
-  const appearOnScroll = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    });
-  }, appearOptions);
-  faders.forEach(fader => appearOnScroll.observe(fader));
-
-  // Botón volver arriba
-  const backToTop = document.getElementById("backToTop");
-  window.addEventListener("scroll", () => {
-    backToTop.style.display = (window.scrollY > 300) ? "block" : "none";
-  });
-  backToTop.addEventListener("click", () => {
-    window.scrollTo({ top:0, behavior:'smooth' });
-  });
-  // Lightbox para ampliar imágenes
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = lightbox.querySelector("img");
-
-document.querySelectorAll(".gallery img, .preview-img").forEach(img => {
-  img.addEventListener("click", () => {
-    lightboxImg.src = img.src;
-    lightbox.style.display = "flex";
-    requestAnimationFrame(() => {
-      lightbox.classList.add("show");
-    });
-  });
-});
-
-lightbox.addEventListener("click", () => {
-  lightbox.classList.remove("show");
-  setTimeout(() => {
-    lightbox.style.display = "none";
-    lightboxImg.src = "";
-  }, 300);
-});
-</script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>

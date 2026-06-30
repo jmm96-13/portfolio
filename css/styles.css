@@ -1,6 +1,6 @@
 /* General */
 body {
-    background-color: #f7c7d0;
+    background-color: #afb8d5;
     font-family: Calibri, sans-serif;
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ header {
 }
 
 h1 {
-  color: #fc6695;
+  color: #2563eb;
   margin: 0;
 }
 
@@ -31,15 +31,15 @@ h1 {
   width: clamp(80px, 10vw, 120px); /* se adapta al ancho de pantalla */
   height: auto;
   border-radius: 50%;
-  border: 4px solid #79cdbd;
+  border: 4px solid #06b6d4;
   object-fit: cover;
   animation: glow 2s infinite alternate;
 }
 
 @keyframes glow {
-  0% { box-shadow: 0 0 10px #fc6695; }
-  50% { box-shadow: 0 0 25px #79cdbd; }
-  100% { box-shadow: 0 0 10px #fc6695; }
+  0% { box-shadow: 0 0 10px #2563eb; }
+  50% { box-shadow: 0 0 25px #06b6d4; }
+  100% { box-shadow: 0 0 10px #2563eb; }
 }
 
 /* Navegación */
@@ -51,7 +51,7 @@ h1 {
 }
 
 .nav-bar a {
-  background-color: #fc6695;
+  background-color: #2563eb;
   padding: 12px 25px;
   color: #fff;
   text-decoration: none;
@@ -61,7 +61,7 @@ h1 {
 }
 
 .nav-bar a:hover {
-   background-color: #79cdbd;  /* solo cambia el botón */
+   background-color: #06b6d4;  /* solo cambia el botón */
    color: #fff;
    transform: translateY(-3px);
    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -87,7 +87,7 @@ h1 {
 .hero {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #fc6695, #79cdbd);
+    background: linear-gradient(135deg, #2563eb, #06b6d4);
     color: white;
     border-radius: 20px;
     margin: 20px auto;
@@ -125,7 +125,7 @@ h1 {
 }
 
 .project h2 {
-    color: #fc6695;
+    color: #2563eb;
     margin-top: 0;
 }
 
@@ -148,7 +148,7 @@ h1 {
 
 .gallery img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px #79cdbd;
+    box-shadow: 0 0 20px #06b6d4;
 }
 
 /* Galería TalleresGR adaptativa */
@@ -176,7 +176,7 @@ h1 {
 /* Hover para todas las imágenes de TalleresGR */
 #talleres .gallery img:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px #79cdbd;
+    box-shadow: 0 0 20px #06b6d4;
 }
 
 /* PDF incrustados */
@@ -210,7 +210,7 @@ iframe:hover {
 
 .contact-img:hover {
     transform: rotateY(10deg);
-    box-shadow: 0 0 30px #79cdbd;
+    box-shadow: 0 0 30px #06b6d4;
 }
 
 /* Lista de contacto */
@@ -226,14 +226,14 @@ iframe:hover {
 
 /* Links */
 a {
-    color: #fc6695;
+    color: #2563eb;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #79cdbd;
+    color: #06b6d4;
 }
 
 /* Botón volver arriba */
@@ -241,7 +241,7 @@ a:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #fc6695;
+    background: #2563eb;
     color: #fff;
     border: none;
     border-radius: 50%;
@@ -256,7 +256,7 @@ a:hover {
 
 #backToTop:hover {
     transform: scale(1.1);
-    background: #79cdbd;
+    background: #06b6d4;
 }
 
 /* Responsive */
@@ -306,7 +306,7 @@ a:hover {
   opacity: 1;
 }
 
-..project-header {
+.project-header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -323,5 +323,17 @@ a:hover {
 
 .project-header img.preview-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px #79cdbd;
+  box-shadow: 0 0 20px #06b6d4;
+}
+/* Estilo para la carátula del videojuego */
+.game-cover {
+    width: 250px;       /* Restauramos el tamaño que tenías */
+    display: block;     /* Permite centrar con margin auto */
+    margin: 0 auto;     /* La centra horizontalmente */
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.game-cover:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
 }
