@@ -479,3 +479,104 @@ a:hover {
 @media (max-width: 768px) {
   .skills-row { grid-template-columns: 1fr; }
 }
+
+/* ── CV Sections ── */
+.cv-item {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(37,99,235,0.1);
+}
+
+.cv-item:last-child {
+  border-bottom: none;
+}
+
+.cv-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cv-role {
+  display: block;
+  font-weight: bold;
+  color: #1e3a8a;
+  font-size: 0.95rem;
+  margin-bottom: 3px;
+}
+
+.cv-company {
+  display: block;
+  color: #2563eb;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cv-date {
+  font-size: 0.8rem;
+  color: #06b6d4;
+  font-weight: bold;
+  white-space: nowrap;
+  background: rgba(6,182,212,0.08);
+  border: 1px solid rgba(6,182,212,0.2);
+  padding: 3px 10px;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.cv-bullets {
+  margin: 10px 0 0 16px;
+  padding: 0;
+  color: #555;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.cv-bullets li {
+  margin-bottom: 4px;
+}
+
+/* Datos de interés */
+.datos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.dato-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: rgba(37,99,235,0.05);
+  border: 1px solid rgba(37,99,235,0.15);
+  border-radius: 12px;
+  padding: 18px 24px;
+  text-align: center;
+  flex: 1;
+  min-width: 130px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dato-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37,99,235,0.15);
+}
+
+.dato-icon { font-size: 1.6rem; }
+
+.dato-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888;
+  font-weight: bold;
+}
+
+.dato-value {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}
