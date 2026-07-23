@@ -251,4 +251,17 @@ document.querySelectorAll('.gallery img, .preview-img, .contact-img').forEach(im
 
   }
 
+  // ── 9. MENÚ DESPLEGABLE EN NAV ─────────────────────
+  // Dropdown de proyectos
+  document.querySelectorAll('.nav-dropdown-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      btn.parentElement.classList.toggle('open');
+    });
+  });
+
+  document.addEventListener('click', () => {
+    document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+  });
+
 });
