@@ -6,6 +6,7 @@
   <title>Portfolio Josefa Macias Manceras</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
@@ -14,8 +15,23 @@
 
   <!-- HEADER -->
   <header id="header">
-    <h1>Josefa Macias</h1>
+    <div class="name-section">
+    <h1>Josefa<br>Macias</h1>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/josefa-macias/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/jmm96-13" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+    
     <img src="documentos/foto_perfil.png" alt="Foto de Josefa" class="profile-img">
+    
+    <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+    
     <nav class="nav-bar">
       <a href="#formacion">Formación</a>
       <a href="#experiencia">Experiencia</a>
@@ -32,7 +48,7 @@
 
   <!-- HERO con efecto Typing -->
   <section class="hero">
-    <h2>Hola, soy Josefa 👋</h2>
+    <h2>Hola, soy Josefa</h2>
     <p><span id="typed"></span></p>
     <p class="location">Málaga, España</p>
   </section>

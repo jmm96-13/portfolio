@@ -580,3 +580,57 @@ a:hover {
   font-weight: bold;
   color: #1e3a8a;
 }
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin-top:12px;
+}
+
+.social-links a{
+    font-size:2rem;
+    color:#2d64e3;
+    transition:all .25s ease;
+}
+
+.social-links a:hover{
+    transform:translateY(-3px) scale(1.1);
+    color:#00b7ff;
+}
+
+/* Menu hamburguesa oculto en escritorio */
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    font-size:2rem;
+    color:#2d64e3;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+        margin:15px auto;
+    }
+
+    .nav-bar{
+        display:none;
+        flex-direction:column;
+        width:90%;
+        margin:auto;
+        gap:10px;
+    }
+
+    .nav-bar.active{
+        display:flex;
+    }
+
+    .nav-bar a{
+        width:100%;
+        text-align:center;
+    }
+
+}

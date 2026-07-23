@@ -90,13 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
   initParticles();
   animate();
 
-
   // ── 2. TYPING EFFECT ──────────────────────────
   const phrases = [
     'Software Developer ',
-    'Front-End Developer',
-    'Game Designer',
-    'Apasionada del código'
+    'Soluciones Tecnológicas',
+    'Soporte técnico',
+    'Transformación Digital',
+    'Análisis de Datos',
+    'IA y Automatización'
   ];
   const typedEl = document.getElementById('typed');
   let phraseIdx = 0, charIdx = 0, deleting = false;
@@ -221,5 +222,24 @@ document.querySelectorAll('.gallery img, .preview-img, .contact-img').forEach(im
   const style = document.createElement('style');
   style.textContent = `.nav-bar a.active { color: var(--white); background: rgba(59,130,246,0.18); }`;
   document.head.appendChild(style);
+
+  // ── 8. MENÚ HAMBURGUESA MÓVIL ────────────────
+  const menuToggle = document.getElementById('menuToggle');
+  const navBar = document.querySelector('.nav-bar');
+
+  if (menuToggle && navBar) {
+
+    menuToggle.addEventListener('click', () => {
+      navBar.classList.toggle('active');
+    });
+
+    // Cerrar menú al pulsar una opción
+    document.querySelectorAll('.nav-bar a').forEach(link => {
+      link.addEventListener('click', () => {
+        navBar.classList.remove('active');
+      });
+    });
+
+  }
 
 });
