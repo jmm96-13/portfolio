@@ -91,8 +91,17 @@ document.addEventListener('DOMContentLoaded', () => {
   animate();
 
   // ── 2. TYPING EFFECT ──────────────────────────
-  const phrases = [
-    'Software Developer ',
+  const isEnglish = document.documentElement.lang === 'en';
+
+  const phrases = isEnglish ? [
+    'Software Developer',
+    'Tech Solutions',
+    'Technical Support',
+    'Digital Transformation',
+    'Data Analysis',
+    'AI & Automation'
+  ] : [
+    'Software Developer',
     'Soluciones Tecnológicas',
     'Soporte técnico',
     'Transformación Digital',
