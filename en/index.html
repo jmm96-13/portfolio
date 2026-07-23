@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Josefa Macias Manceras</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- Particle background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="name-section">
+      <h1>Josefa<br>Macias</h1>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/josefa-macias/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/jmm96-13" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+    <img src="../documentos/foto_perfil.png" alt="Photo of Josefa" class="profile-img">
+
+    <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+
+    <nav class="nav-bar">
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#cv">Download CV</a>
+      <a href="#talleres">TalleresGR</a>
+      <a href="#realestate">Real Estate</a>
+      <a href="#darkmiau">Darkmiau</a>
+      <a href="#projects">Web</a>
+      <a href="#modeling">3D</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="language-selector">
+      <a href="../index.html" title="Español">
+        <img src="https://flagcdn.com/w40/es.png" alt="Español">
+      </a>
+      <a href="index.html" title="English">
+        <img src="https://flagcdn.com/w40/gb.png" alt="English">
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Hi, I'm Josefa</h2>
+    <p><span id="typed"></span></p>
+    <p class="location">Málaga, Spain</p>
+  </section>
+
+  <main class="container">
+
+    <!-- EDUCATION -->
+    <section id="education" class="project fade-in">
+      <h2 class="title">Education</h2>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div>
+            <span class="cv-role">Higher Degree in Cross-Platform Application Development</span>
+            <span class="cv-company">Alan Turing</span>
+          </div>
+          <span class="cv-date">2024/26</span>
+        </div>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div>
+            <span class="cv-role">Level 3 Professional Certificate · Internet Services Administration</span>
+            <span class="cv-company">Aula Directa · 590 hours</span>
+          </div>
+          <span class="cv-date">2023</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section id="experience" class="project fade-in">
+      <h2 class="title">Professional Experience</h2>
+      <p class="section-sub">Projects and roles in software development</p>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div>
+            <span class="cv-role">Application Developer & AI Integration</span>
+            <span class="cv-company">ROMUX · Internship</span>
+          </div>
+          <span class="cv-date">2026</span>
+        </div>
+        <ul class="cv-bullets">
+          <li>Development of reactive and responsive interfaces using React, TypeScript and Tailwind CSS.</li>
+          <li>Real-time AI integration with OpenAI Realtime API and WebSockets, optimised with Lovable.</li>
+          <li>Serverless logic implementation and data management with Supabase (Deno) and PostgreSQL.</li>
+        </ul>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div>
+            <span class="cv-role">Web Developer · Freelance</span>
+            <span class="cv-company">Talleres Gómez &amp; Rueda</span>
+          </div>
+          <span class="cv-date">2024/25</span>
+        </div>
+        <ul class="cv-bullets">
+          <li>Design and development of the corporate website with HTML/CSS layout.</li>
+          <li>Creation of the visual identity, logo, banner and informational materials.</li>
+        </ul>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div>
+            <span class="cv-role">Administrative Assistant</span>
+            <span class="cv-company">Arroyo Ancón S.L.</span>
+          </div>
+          <span class="cv-date">2025</span>
+        </div>
+        <ul class="cv-bullets">
+          <li>Web design and development using HTML, CSS and JavaScript, SEO and responsive adaptation.</li>
+          <li>Full technical configuration: GitHub Pages, DNS/SSL (Arsys).</li>
+          <li>Document management, incident control and materials handling.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- OTHER EXPERIENCE -->
+    <section id="other-experience" class="project fade-in">
+      <h2 class="title">Other Experience</h2>
+      <p class="section-sub">Other roles and responsibilities</p>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">Receptionist & Data Management · Car Dealership</span>
+          <span class="cv-date">2025</span>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">Sports Activities Monitor · Cártama Town Hall</span>
+          <span class="cv-date">2023/24</span>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">Administrative Assistant · Maude Studio</span>
+          <span class="cv-date">2023</span>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">Coordination Administrator · RC Hogares-Vita Inmobiliaria</span>
+          <span class="cv-date">2016/22</span>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">Customer Support Agent · TEYAME</span>
+          <span class="cv-date">2015/16</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADDITIONAL TRAINING -->
+    <section id="training" class="project fade-in">
+      <h2 class="title">Additional Training</h2>
+      <p class="section-sub">Courses and certifications</p>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">AI Agents and RAG Systems · Fundación Esplai (50h)</span>
+          <span class="cv-date">2026</span>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">Web Programming with Javascript and PHP · CIC Formación (65h)</span>
+          <span class="cv-date">2025</span>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">Computer Security · Secure Access and Data Transmission Systems (150h)</span>
+          <span class="cv-date">2025</span>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">Security Incident Management · IT Security Auditing · NetFormación (180h)</span>
+          <span class="cv-date">2025</span>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">Android Application Development · CESUR (60h)</span>
+          <span class="cv-date">2025</span>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">Web Page Design · ITM (100h)</span>
+          <span class="cv-date">2024</span>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">AI & Big Data Programming · IoT and Smart City Solutions · Polo Digital (300h)</span>
+          <span class="cv-date">2024</span>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">Web Creation, Programming and Design · Grupo Hedima (60h)</span>
+          <span class="cv-date">2021</span>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-role">Video Game Development in Unity · Escuela de Organización Industrial (397h)</span>
+          <span class="cv-date">2020</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADDITIONAL INFO -->
+    <section id="info" class="project fade-in">
+      <h2 class="title">Additional Info</h2>
+      <div class="datos-grid">
+        <div class="dato-card">
+          <span class="dato-icon"><img src="https://flagcdn.com/w40/gb.png" alt="English"></span>
+          <span class="dato-label">English</span>
+          <span class="dato-value">B1 Level - Improving</span>
+        </div>
+        <div class="dato-card">
+          <span class="dato-icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f697.svg" alt="Coche" width="40"></span>
+          <span class="dato-label">Mobility</span>
+          <span class="dato-value">Own vehicle</span>
+        </div>
+        <div class="dato-card">
+          <span class="dato-icon"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4dc.svg" alt="Certificado" width="40"></span>
+          <span class="dato-label">Youth Guarantee</span>
+          <span class="dato-value">Registered</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="project fade-in">
+      <h2 class="title">Skills</h2>
+      <p class="section-sub">Technologies I use to build projects</p>
+
+      <div class="skill-category cat-blue">
+        <div class="cat-header">
+          <span class="cat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+          <h3>Languages</h3>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card"><img src="https://skillicons.dev/icons?i=java" alt="Java"><span>Java</span></div>
+          <div class="skill-card"><img src="https://skillicons.dev/icons?i=python" alt="Python"><span>Python</span></div>
+          <div class="skill-card"><img src="https://skillicons.dev/icons?i=ts" alt="TypeScript"><span>TypeScript</span></div>
+          <div class="skill-card"><img src="https://skillicons.dev/icons?i=cs" alt="C#"><span>C#</span></div>
+          <div class="skill-card"><img src="https://skillicons.dev/icons?i=kotlin" alt="Kotlin"><span>Kotlin</span></div>
+          <div class="skill-card"><img src="https://skillicons.dev/icons?i=html" alt="HTML"><span>HTML</span></div>
+          <div class="skill-card"><img src="https://skillicons.dev/icons?i=css" alt="CSS"><span>CSS</span></div>
+          <div class="skill-card"><img src="https://skillicons.dev/icons?i=js" alt="JavaScript"><span>JavaScript</span></div>
+        </div>
+      </div>
+
+      <div class="skills-row">
+        <div class="skill-category cat-green">
+          <div class="cat-header">
+            <span class="cat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></span>
+            <h3>Frameworks & Libraries</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=react" alt="React"><span>React</span></div>
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=angular" alt="Angular"><span>Angular</span></div>
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=spring" alt="Spring"><span>Spring</span></div>
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=gradle" alt="Gradle"><span>Gradle</span></div>
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap"><span>Bootstrap</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category cat-yellow">
+          <div class="cat-header">
+            <span class="cat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></span>
+            <h3>Tools & IDEs</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=github" alt="GitHub"><span>GitHub</span></div>
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=docker" alt="Docker"><span>Docker</span></div>
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=eclipse" alt="Eclipse"><span>Eclipse</span></div>
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=vscode" alt="VS Code"><span>VS Code</span></div>
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=androidstudio" alt="Android Studio"><span>Android Studio</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-row">
+        <div class="skill-category cat-pink">
+          <div class="cat-header">
+            <span class="cat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 011.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg></span>
+            <h3>Design & Management</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=figma" alt="Figma"><span>Figma</span></div>
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=unity" alt="Unity"><span>Unity</span></div>
+          </div>
+        </div>
+
+        <div class="skill-category cat-red">
+          <div class="cat-header">
+            <span class="cat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span>
+            <h3>Databases & Analysis</h3>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL"><span>MySQL</span></div>
+            <div class="skill-card"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB"><span>MongoDB</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="project fade-in">
+      <h2 class="title">Curriculum Vitae</h2>
+      <a href="../documentos/english/Resume_Josefa_Macias_Software-developer.pdf" target="_blank">
+        <img src="../documentos/CV_Josefa_Macias_Desarrolladora-software.png" alt="Curriculum Vitae"
+          style="width:100%; max-width:700px; display:block; margin:0 auto; border-radius:15px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+      </a>
+    </section>
+
+    <!-- TALLERESGR -->
+    <section id="talleres" class="project fade-in">
+      <h2 class="title">Talleres Gomez & Rueda Website</h2>
+      <div class="project-header">
+        <p><a href="https://saldyard.github.io/talleresGR/" target="_blank">Visit the website</a></p>
+        <img src="../TalleresGR/web_talleres.JPG" alt="Talleres Website" class="preview-img">
+      </div>
+      <h3>Graphic Design</h3>
+      <div class="gallery">
+        <img src="../TalleresGR/logo_1.png" alt="Logo 1">
+        <img src="../TalleresGR/logo_2.png" alt="Logo 2">
+        <img src="../TalleresGR/horario.png" alt="Schedule">
+        <img src="../TalleresGR/banner1.png" alt="Banner 1">
+        <img src="../TalleresGR/banner_2.png" alt="Banner 2">
+        <img src="../TalleresGR/Tarjeta_mantenimiento.png" alt="Maintenance card">
+        <img src="../TalleresGR/Tarjeta_mantenimiento_1.png" alt="Maintenance card 1">
+      </div>
+    </section>
+
+    <!-- REAL ESTATE -->
+    <section id="realestate" class="project fade-in">
+      <h2 class="title">Real Estate Website</h2>
+      <div class="project-header">
+        <p><a href="https://saldyard.github.io/realEstate/" target="_blank">Visit the website</a></p>
+        <img src="../realEstate/web_inmobiliaria.JPG" alt="Real Estate Website" class="preview-img">
+      </div>
+      <h3>Beta & Drafts</h3>
+      <div class="gallery">
+        <img src="../realEstate/borrador1.JPG" alt="Draft 1">
+        <img src="../realEstate/borrador2.JPG" alt="Draft 2">
+      </div>
+      <p><a href="../realEstate/readme.pdf" target="_blank">View Readme (PDF)</a></p>
+    </section>
+
+    <!-- DARKMIAU -->
+    <section id="darkmiau" class="project fade-in">
+      <h2 class="title">Darkmiau Videogame</h2>
+      <img src="../Darkmiau/caratula.png" alt="Darkmiau Cover" class="game-cover">
+      <h3>Play here: <a href="https://saldyard.itch.io/dark-miau" target="_blank">Itch.io</a></h3>
+      <p><a href="../Darkmiau/GDD_DARK_MIAU.pdf" target="_blank">Game Design Document</a></p>
+    </section>
+
+    <!-- WEB PROJECTS -->
+    <section id="projects" class="project fade-in">
+      <h2>Web Projects</h2>
+      <ul class="web-list">
+        <li><a href="../Proyectos_web/ejercicio1.html" target="_blank">Exercise 1</a></li>
+        <li><a href="../Proyectos_web/ejercicio2.html" target="_blank">Exercise 2</a></li>
+        <li><a href="../Proyectos_web/TechSolutions S.L/index.html" target="_blank">TechSolutions S.L.</a></li>
+        <li><a href="../Proyectos_web/Wordle_Game/Wordle_code.pdf" target="_blank">Wordle Game (Code PDF)</a></li>
+      </ul>
+      <h3>Wordle Gallery:</h3>
+      <div class="gallery">
+        <img src="../Proyectos_web/Wordle_Game/inicia_el_juego_main.PNG" alt="Start game">
+        <img src="../Proyectos_web/Wordle_Game/ERROR_palabra6letras_WordkeFeedback.PNG" alt="6-letter word error">
+        <img src="../Proyectos_web/Wordle_Game/_WordleFeedback_2.PNG" alt="Wordle Feedback 2">
+        <img src="../Proyectos_web/Wordle_Game/wordlefilemanager_4intentos.PNG" alt="4 attempts">
+        <img src="../Proyectos_web/Wordle_Game/wordlefilemanager2_3intentos.PNG" alt="3 attempts">
+        <img src="../Proyectos_web/Wordle_Game/wordlegame_2intentos.PNG" alt="2 attempts">
+        <img src="../Proyectos_web/Wordle_Game/wordlegame2_1intento.PNG" alt="1 attempt">
+        <img src="../Proyectos_web/Wordle_Game/wordlegame3_0intentos.PNG" alt="0 attempts">
+        <img src="../Proyectos_web/Wordle_Game/wordlegame4_adivinaste.PNG" alt="You guessed it">
+        <img src="../Proyectos_web/Wordle_Game/carpetawordlegame_archivos_historial_words.PNG" alt="Word history">
+      </div>
+    </section>
+
+    <!-- 3D MODELING -->
+    <section id="modeling" class="project fade-in">
+      <h2 class="title">3D Modeling</h2>
+      <div class="gallery">
+        <img src="../Modelado_3d/deer.jpg" alt="Deer">
+        <img src="../Modelado_3d/ears.jpg" alt="Ears">
+        <img src="../Modelado_3d/eyes.jpg" alt="Eyes">
+        <img src="../Modelado_3d/hand.jpg" alt="Hand">
+        <img src="../Modelado_3d/horns.jpg" alt="Horns">
+        <img src="../Modelado_3d/noise.jpg" alt="Noise">
+        <img src="../Modelado_3d/toy.jpg" alt="Toy">
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="project fade-in contact-card">
+      <h2 class="title">Contact</h2>
+
+      <img src="../documentos/Tarjeta_Josefa_Macias.png" alt="Contact card" class="contact-img">
+
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/josefa-macias/" target="_blank" class="contact-btn">
+          🔗 LinkedIn
+        </a>
+        <a href="https://github.com/jmm96-13" target="_blank" class="contact-btn">
+          💻 GitHub
+        </a>
+        <span class="contact-location">📍 Málaga, Spain</span>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4229.846658668433!2d-4.549763490566948!3d36.73782337214924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1282549a8f3%3A0x86d10d4a28bf24e5!2sParque%20Tecnol%C3%B3gico%20de%20Andaluc%C3%ADa%20S.A.!5e1!3m2!1ses!2ses!4v1756846275247!5m2!1ses!2ses"
+        width="100%" height="300"
+        style="border:0; border-radius:15px; margin-top:20px;"
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+
+  </main>
+
+  <button id="backToTop">↑</button>
+
+  <div id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img src="" alt="Enlarged">
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -634,3 +634,36 @@ a:hover {
     }
 
 }
+
+@media(max-width:768px){
+
+    .language-selector {
+        justify-content:center;
+        margin:10px auto;
+    }
+
+}
+
+/* Selector idiomas */
+.language-selector {
+    display:flex;
+    gap:12px;
+    justify-content:flex-end;
+    align-items:center;
+    margin-top:15px;
+    margin-right:25px;
+}
+
+.language-selector img {
+    width:32px;
+    height:22px;
+    object-fit:cover;
+    border-radius:5px;
+    cursor:pointer;
+    transition:transform .3s ease, opacity .3s ease;
+}
+
+.language-selector img:hover {
+    transform:scale(1.15);
+    opacity:.8;
+}
