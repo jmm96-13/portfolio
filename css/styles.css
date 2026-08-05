@@ -657,6 +657,83 @@ a:hover {
   font-weight: bold;
 }
 
+/* Certificaciones */
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f4f8ff;
+  border: 1px solid rgba(37,99,235,0.15);
+  border-radius: 12px;
+  padding: 14px 18px;
+  flex: 1 1 340px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(37,99,235,0.12);
+}
+
+.cert-card img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.cert-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cert-name {
+  font-weight: bold;
+  color: #1e3a8a;
+  font-size: 0.9rem;
+}
+
+.cert-issuer {
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.cert-date {
+  color: #888;
+  font-size: 0.75rem;
+}
+
+/* Tarjetas en proceso */
+.cert-pending {
+  border-style: dashed;
+  border-color: rgba(6,182,212,0.35);
+  background: rgba(6,182,212,0.04);
+  opacity: 0.85;
+}
+
+.cert-badge-pending {
+  background: rgba(6,182,212,0.12);
+  color: #06b6d4;
+  border: 1px solid rgba(6,182,212,0.3);
+  border-radius: 50px;
+  padding: 4px 12px;
+  font-size: 0.72rem;
+  font-weight: bold;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 /* Datos de interés */
 .datos-grid {
   display: flex;
